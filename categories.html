@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Categories - E-Store</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url("/HtmlCssProject/Images/category2.avif");
+    }
+
+    header {
+      background-color: #efb359;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo-nav h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .list-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .list-nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .list-nav a:hover {
+      text-decoration: underline;
+    }
+
+    .categories-section {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .categories-section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color:goldenrod;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .category-card {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.2s ease;
+    }
+
+    .category-card:hover {
+      transform: scale(1.05);
+    }
+
+    .category-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      
+    }
+
+    .category-card h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .category-card p {
+      font-size: 0.9rem;
+      color: #777;
+      margin: 10px 0;
+    }
+
+    .category-card a {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #efb359;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .category-card a:hover {
+      background-color: #d6972e;
+    }
+    /* Footer */
+.footer {
+  background-color: #1b1b25;
+  color: #f1f1f1;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-about, .footer-links, .footer-contact {
+  flex: 1 1 250px;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-contact h3 {
+  margin-bottom: 15px;
+}
+
+.footer-about p,
+.footer-contact p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  border-top: 1px solid #555;
+  padding-top: 10px;
+  font-size: 0.9rem;
+}
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo-nav">
+      <h1>E-Store</h1>
+    </div>
+    <nav class="list-nav">
+      <a href="/HtmlCssProject/home.html">Home</a>
+      <a href="/HtmlCssProject/products.html">Products</a>
+      <a href="/HtmlCssProject/categories.html">Categories</a>
+      <a href="/HtmlCssProject/about.html">About Us</a>
+      <a href="/HtmlCssProject/contact.html">Contact</a>
+      <a href="/HtmlCssProject/cart.html">Cart</a>
+      <a href="/HtmlCssProject/login.html">Login</a>
+    </nav>
+  </header>
+
+  <!-- Categories Section -->
+  <div class="categories-section">
+    <h2>Shop by Category</h2>
+    <div class="category-grid">
+      
+
+      <div class="category-card">
+        <img src="/HtmlCssProject/Images/clothes.avif" alt="Clothing" />
+        <h3>Clothing</h3>
+        <p>Fashionable wear for men, women, and kids.</p>
+        <a href="#">View Products</a>
+      </div>
+
+      <div class="category-card">
+        <img src="/HtmlCssProject/Images/heels.avif" alt="heels" />
+        <h3>heels</h3>
+        <p>Essentials for your home and kitchen.</p>
+        <a href="#">View Products</a>
+      </div>
+
+      <div class="category-card">
+        <img src="/HtmlCssProject/Images/handbags.avif" alt="Handbags" />
+        <h3>Beauty</h3>
+        <p>Skincare, makeup & grooming products.</p>
+        <a href="#">View Products</a>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>About E-Store</h3>
+        <p>Your go-to destination for quality products at affordable prices. Fast delivery and great customer service guaranteed.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: support@estore.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Address: Pune, Maharashtra, India</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 E-Store. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

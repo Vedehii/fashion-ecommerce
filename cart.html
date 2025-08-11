@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Cart</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{
+      background: #fdd190;
+    }
+    header {
+      background-color:  #efb359;
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo-nav h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+
+    .list-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .list-nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .list-nav a:hover {
+      text-decoration: underline;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .cart-container {
+      max-width: 800px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .cart-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .cart-item:last-child {
+      border-bottom: none;
+    }
+
+    .cart-item img {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .item-info {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+
+    .item-details {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .item-details h4 {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .item-details p {
+      margin: 5px 0 0;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    .item-price {
+      font-weight: bold;
+      color: green;
+    }
+
+    .cart-total {
+      text-align: right;
+      margin-top: 20px;
+      font-size: 1.2rem;
+      font-weight: bold;
+    }
+
+    .checkout-button {
+      display: block;
+      margin: 30px auto 0;
+      background-color: orange;
+      color: white;
+      padding: 12px 24px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      width: 200px;
+    }
+
+    .checkout-button:hover {
+      background-color: darkorange;
+    }
+    /* Footer */
+.footer {
+  background-color: #1b1b25;
+  color: #f1f1f1;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.footer-about, .footer-links, .footer-contact {
+  flex: 1 1 250px;
+}
+
+.footer-about h3,
+.footer-links h3,
+.footer-contact h3 {
+  margin-bottom: 15px;
+}
+
+.footer-about p,
+.footer-contact p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+  </style>
+</head>
+<body>
+    <!-- Header and Navigation -->
+  <header>
+    <div class="logo-nav">
+      <h1>E-Store</h1>
+    </div>
+    <nav class="list-nav">
+      <a href="/HtmlCssProject/home.html">Home</a>
+      <a href="/HtmlCssProject/products.html">Products</a>
+      <a href="/HtmlCssProject/categories.html">Categories</a>
+      <a href="/HtmlCssProject/about.html">About Us</a>
+      <a href="/HtmlCssProject/contact.html">Contact</a>
+      <a href="/HtmlCssProject/cart.html">Cart</a>
+      <a href="/HtmlCssProject/login.html">Login</a>
+    </nav>
+  </header>
+
+  <h1>Your Shopping Cart</h1>
+
+  <div class="cart-container">
+    <div class="cart-item">
+      <div class="item-info">
+        <img src="/HtmlCssProject/Images/product6.jpg" alt="Product 1">
+        <div class="item-details">
+          <h4>Product 1</h4>
+          <p>Qty: 1</p>
+        </div>
+      </div>
+      <div class="item-price">$19.99</div>
+    </div>
+
+    <div class="cart-item">
+      <div class="item-info">
+        <img src="/HtmlCssProject/Images/product11.jpg" alt="Product 2">
+        <div class="item-details">
+          <h4>Product 2</h4>
+          <p>Qty: 1</p>
+        </div>
+      </div>
+      <div class="item-price">$29.99</div>
+    </div>
+
+    <div class="cart-total">
+      Total: $49.98
+    </div>
+
+    <a href="checkout.html" class="checkout-button">Proceed to Checkout</a>
+  </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-about">
+        <h3>About E-Store</h3>
+        <p>Your go-to destination for quality products at affordable prices. Fast delivery and great customer service guaranteed.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms & Conditions</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: support@estore.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Address: Pune, Maharashtra, India</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 E-Store. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

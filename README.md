@@ -16,4 +16,4 @@ Features products such as **heels, clothes, and handbags**, with a clean, modern
 ## 🚀 How to View
 1. Clone the repository:
    ```bash
-   git clone https://github.com/vedehii/fashion-ecommerce.git
+   git clone https://github.com/Vedehii/fashion-ecommerce.git

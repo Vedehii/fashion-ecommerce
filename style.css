@@ -48,7 +48,7 @@ header {
     }
 /* Hero Section */
 .hero {
-  background-image: url("/HtmlCssProject/Images/hero6.jpg");
+  background-image: url("/Images/hero6.jpg");
   
   background-size: cover;
   background-position:top;
